@@ -10,6 +10,7 @@ h1 {
     background-color: dimgrey;
     color: white;
     text-align: center;
+    margin: auto;
 }
 
 .hpintro {
@@ -28,18 +29,21 @@ li {
 	font-family: 'Roboto', sans-serif;
 }
 
-.asideattrib {
-  float: right;
-	padding-left: 15px;
-  margin-left: 15px;
-}
-
+/*
 
 .attributes {
 display: block;
 margin-right: 240px;
 font-size: 2vw;
 font-family: 'Roboto', sans-serif;
+}
+
+*/
+
+.asideright {
+  float: right;
+  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .capital2 {
@@ -52,6 +56,11 @@ font-size: 20px;
 font-style: italic;
 font-family: 'Roboto', sans-serif;
 }
+
+.capitaltext {
+  font-size: 40px;
+}
+
 /*ДАЛЬШЕ ИДЕТ ВСЁ ДЛЯ МЕНЮ САЙТА*/
 
  /* Add a black background color to the top navigation */
@@ -112,3 +121,53 @@ font-family: 'Roboto', sans-serif;
     text-align: left;
   }
 } 
+
+
+/*ДАЛЬШЕ ИДЁТ ГАЛЕРЕЯ ФОНОВ ДЛЯ СТРАНИЦЫ "КУХНЯ"*/
+
+.mealphotos {
+  border: 1px solid #ccc;
+}
+
+.mealphotos:hover {
+  border: 1px solid #777;
+}
+
+.mealphotos img {
+  width: 100%;
+  height: auto;
+}
+
+.foodname {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 9.99999%;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

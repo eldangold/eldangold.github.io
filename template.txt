@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Аргентина</title>
+  <title>Аргентина</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -13,10 +13,15 @@
  <div class="NAVBAR">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="topnav" id="myTopnav"><a href="" class="active">На головну</a> <a href="">Атрибути країни </a> <a href="geography.html">Географія країни</a> <a href="kitchen.html">Кухня країни</a> <a href="">Політичний та державний устрій країни</a>
-	<a href="">Економіка країни</a>
-	<a href="">Туризм у країні</a>
-	<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a></div> 
+<div class="topnav" id="myTopnav"><a href="index.html">На головну</a>
+<a href="capital.html">Столиця країни</a>
+<a href="attributes.html">Атрибути країни </a> 
+<a href="geography.html" class="active">Географія країни</a> 
+<a href="kitchen.html">Кухня країни</a>
+<a href="">Політичний та державний устрій країни</a>
+<a href="">Економіка країни</a>
+<a href="">Туризм у країні</a>
+  <a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a></div> 
 </div>
 <script type="text/javascript">
 function myFunction() {
@@ -28,8 +33,10 @@ function myFunction() {
   }
 } 
 </script>
-<p>
-</p>
+
+<article>
+
+</article>
 </body>
 <footer class="footer">© Copyright © Гольд Ельдан <br> All rights reserved. Всі права захищено. 
 <br>2021</footer>
