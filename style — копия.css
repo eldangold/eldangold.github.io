@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 h1 {
 	-webkit-box-shadow: 5px 5px 15px #CC6600;
 	box-shadow: 5px 5px 15px #CC6600;	
@@ -8,49 +11,60 @@ h1 {
 
 .footer {
     width: 100%;
-    height: 100px;
-    background-color: #75AEE0;
+    height: 100%;
+    background-color: dimgrey;
     color: white;
     text-align: center;
-    margin: auto;
+    padding-left: 40%;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 .hpintro {
   font-size: 1.4vw;
 }
 
+article {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
 p {
-    font-size: 1.4vw;
+    font-size: 2.75vh;
     font-family: 'Roboto', sans-serif;
+    margin: 2vh;
 
 }
 
 li {
     font-style: italic;
-    font-size: 1.2vw;
-	font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+	font-family: 'Roboto', sans-serif;+
+}
+
+li {
+  margin-left: 5vh;
 }
 
 h1 {
-  !font-family: 'Oswald', sans-serif;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 
-/*
-
-.attributes {
-display: block;
-margin-right: 240px;
-font-size: 2vw;
-font-family: 'Roboto', sans-serif;
+.indeximg {
+  margin: 1vh;
+  padding: 0 6px;
+  float: left;
+  width: 9.99999%;
 }
-
-*/
+}
 
 .asideright {
   float: right;
   padding-left: 15px;
   margin-left: 15px;
+
 }
 
 .capital2 {
@@ -68,9 +82,15 @@ font-family: 'Roboto', sans-serif;
   font-size: 40px;
 }
 
+.smalldesctext {
+  font-size: 3vh;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
 /*ДАЛЬШЕ ИДЕТ ВСЁ ДЛЯ МЕНЮ САЙТА*/
 
-  /* Add a black background color to the top navigation */
+ /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -105,6 +125,29 @@ font-family: 'Roboto', sans-serif;
 } 
 
 
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width : 450px ){
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width : 450px ){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
 
 
 /*ДАЛЬШЕ ИДЁТ ГАЛЕРЕЯ ФОНОВ ДЛЯ СТРАНИЦЫ "КУХНЯ"*/
@@ -242,54 +285,4 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
-}
-
-
-
-/*ФОТО НА ГЛАВНОЙ СТРАНИЦЕ*/
-
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.tourism-main-img {
-  width: 100%;
-  height: auto;
-}
-
-br {
-  line-height: 5%;
 }
