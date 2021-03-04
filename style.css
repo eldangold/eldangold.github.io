@@ -134,7 +134,7 @@ font-family: 'Roboto', sans-serif;
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 9.99999%;
+  width: 19.99999%;
 }
 
 @media only screen and (max-width: 600px) {

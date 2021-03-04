@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 <center>
 <img src="Untitled-1.png" width="100" height="50" alt=""/>
 </center>
@@ -22,8 +32,10 @@
 <a href="kitchen.html" class="active">Кухня країни</a>
 <a href="politics.html">Політичний та державний устрій країни</a>
 <a href="economic.html">Економіка країни</a>
-<a href="">Туризм у країні</a>
-  <a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a></div> 
+<a href="tourism.html">Туризм у країні</a>
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 <script type="text/javascript">
 function myFunction() {
@@ -46,7 +58,7 @@ function myFunction() {
     <a target="_blank" href="img_5terre.jpg">
       <img src="kitchen/empanada.jpg">
     </a>
-    <div class="foodname">Емпанада (ісп. Empanada — пиріжок з начинкою). <br>Він є типовою стравою аргентинської кухні. <br>У кожної провінції Аргентини є свій рецепт обсмажених в олії емпанадас. </div>
+    <div class="foodname">Емпанада (ісп. Empanada — пиріжок з начинкою).Він є типовою стравою аргентинської кухні. У кожної провінції Аргентини є свій рецепт обсмажених в олії емпанадас. </div>
   </div>
 </div>
 
@@ -54,114 +66,81 @@ function myFunction() {
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg">
+      <img src="kitchen/locro.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Локро - національний аргентинський густий суп зі свинини, яловичини, квасолі, гарбуза і кукурудзи, який традиційно готують два рази на рік - 25 травня, в День революції і 9 липня, в День незалежності</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg">
+      <img src="kitchen/milanese.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Міланеса (ісп. milanesa) — південноамериканський різновид відбивної котлети в паніровці. Складається з тонкої скибочки яловичини, курятиини, риби, телятини або іноді свинини.</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/asado.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Аса́до (ісп. Asado) — страва зі смаженого м'яса, популярна у південноамериканських країнах. Зазвичай асадо готують чоловіки — асадори. Гриль для приготування страви (ісп. parrilla) є майже в кожній латиноамериканській родині, часто асадо готують прямо у дворі або на балконі. </div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/alfajores.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Альфахор — традиційний іспанський і латиноамериканський кондитерський виріб. Основна його форма складається з двох шарів солодкого круглого печива, з'єднаних між собою dulce de leche (молочна карамель) або джемом і покритих цукровою пудрою. У більшості альфахорів два шари печива і начинка між ними. </div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/chipa.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Чипа (ісп. chipa) — невеликі печені булочки з тапіокової або кукурудзяної крупи з сиром, популярна закуска та сніданок в Парагваї і на північному сході Аргентини[1][2]. Рецепт чипи відомий з XIX століття, а його походження пов'язане з корінним народом Парагваю, гуарані. Чипа - недорогі закуски, які часто продають з вуличних прилавків або з автобусів з великих кошиків, в яких лежать загорнуті в тканину булочки.</div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/pastafrola.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Пастафрола (грец. πάστα φλώρα) — тип солодкого тарту, поширений в Аргентині, Парагваї, Уругваї, Єгипті та Греції. Для основи використовується пісочне тісто, як начинка — джем, його вкривають «решіткою» з тіста. Як начинку часто вживають айвовий мармелад (ісп. dulce de membrillo), варення з солодкої картоплі (ісп. dulce de batata), дульсе-де-лече, варення з гуяви чи полуниці. Пастафрола, як правило, запікається в духовці у круглій формі для випічки. </div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/malbec.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Мальбе́к (фр. Malbec) — червоний сорт винограду, підвид виду виноград культурний (Vitis vinifera), який використовується для виготовлення однойменного вина. Найбільше вирощується в Аргентині (75 % площ).</div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/puchero.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Пуче́ро (ісп. puchero — «горщик») — гаряча страва, близька до супу, поширена в аргентинській, колумбійській, уругвайській, філіппінській, а спочатку іспанській, точніше, андалуській кухні та кухні Канарських островів. Спорідненою стравою до пучеро є косідо.</div>
   </div>
 </div>
 <div class="responsive">
   <div class="mealphotos">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg">
+      <img src="kitchen/mate.jpg">
     </a>
-    <div class="foodname">Add a description of the image here</div>
+    <div class="foodname">Ма́те — також відоме як парагвайський чай (ісп. yerba mate — «єрба-мате»), — спрепароване сухе листя вічнозеленої кущової рослини падуб парагвайський (Illex paraguariensis), що з прадавніх часів використовується південноамериканськими індіанцями для приготування тонізуючого напою, та сам цей напій, заварений у специфічному посуді. Зараз напій дуже популярний на великій частині південноамериканського континенту, зокрема і в Аргентині.</div>
   </div>
 </div>
 <div class="clearfix"></div>
 
 <div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-  <a href="https://restpack.io/html2pdf/save-as-pdf?url=" rel="nofollow" target="_blank">PDF</a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
